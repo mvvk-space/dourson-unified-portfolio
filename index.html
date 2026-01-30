@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dan & Judy Dourson: Authors and Wildlife Biologists</title>
+    <meta name="description" content="Explore the captivating world of Dan and Judy Dourson, dedicated authors and wildlife biologists. Discover their individual journeys, collaborative projects, and the beauty of nature through their work.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lobster&family=Outfit:wght@400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                        lobster: ['Lobster', 'cursive'],
+                        roboto: ['Roboto', 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-teal': '#4C7A7A',
+                        'brand-dark': '#1A3B3B',
+                        'brand-light': '#d5dfff',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .font-lobster { font-family: 'Lobster', cursive; }
+        .font-playfair { font-family: 'Playfair Display', serif; }
+        .font-roboto { font-family: 'Roboto', sans-serif; }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #4C7A7A; border-radius: 5px; }
+        ::-webkit-scrollbar-thumb:hover { background: #1A3B3B; }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-white antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-sm transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="font-display font-bold text-2xl text-brand-dark flex items-center gap-2">
+                        <i data-feather="map" class="w-6 h-6 text-brand-teal"></i>
+                        Dan & Judy Dourson
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="text-gray-700 hover:text-brand-teal font-medium transition-colors">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-brand-teal font-medium transition-colors">Our Journey</a>
+                    <a href="#research" class="text-gray-700 hover:text-brand-teal font-medium transition-colors">Research & Books</a>
+                    <a href="#gallery" class="text-gray-700 hover:text-brand-teal font-medium transition-colors">Gallery</a>
+                    <a href="#contact" class="bg-brand-teal text-white px-5 py-2 rounded-full font-medium hover:bg-brand-dark transition-colors shadow-lg hover:shadow-xl">Contact Us</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-brand-teal focus:outline-none">
+                        <i data-feather="menu" class="w-8 h-8"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full">
+            <div class="px-4 pt-2 pb-6 space-y-2 shadow-lg">
+                <a href="#home" class="block px-3 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-brand-teal rounded-md">Home</a>
+                <a href="#about" class="block px-3 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-brand-teal rounded-md">Our Journey</a>
+                <a href="#research" class="block px-3 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-brand-teal rounded-md">Research & Books</a>
+                <a href="#gallery" class="block px-3 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-brand-teal rounded-md">Gallery</a>
+                <a href="#contact" class="block px-3 py-3 text-base font-medium text-brand-teal font-bold hover:bg-gray-50 rounded-md">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/AR0LQ30r96fePnJg/img_5862-AoPW7JgaQMTzbNr3.png" alt="Nature Background" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/40"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/60"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto mt-16">
+            <h1 class="font-lobster text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-lg animate-fade-in-up">
+                Dan & Judy Dourson
+            </h1>
+            <p class="font-sans text-xl md:text-2xl text-gray-100 mb-10 max-w-3xl mx-auto leading-relaxed font-light">
+                Explore the world of wildlife through the eyes of passionate authors and dedicated biologists.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#about" class="bg-white text-brand-dark px-8 py-3 rounded-full font-semibold hover:bg-brand-teal hover:text-white transition-all duration-300 shadow-lg">
+                    Discover More
+                </a>
+                <a href="#research" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-brand-dark transition-all duration-300">
+                    View Publications
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Journey Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <span class="text-brand-teal font-bold tracking-wider uppercase text-sm mb-2 block">Who We Are</span>
+                    <h2 class="font-display text-4xl font-bold text-gray-900 mb-6">Our Journey</h2>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Welcome to our portfolio! We are Dan and Judy, passionate authors and wildlife biologists dedicated to sharing our experiences and insights through our work and stories.
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Explore the inspiring journey of Dan and Judy. Passionate about nature, we are dedicated to studying wildlife and sharing our findings through engaging literature. Our experience spans from 2010 to present, focusing on wildlife research and conservation.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 mt-8">
+                        <div class="bg-gray-50 p-4 rounded-lg border border-gray-100 text-center">
+                            <h3 class="font-display text-2xl font-bold text-brand-teal">15+</h3>
+                            <p class="text-sm text-gray-500">Years Experience</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg border border-gray-100 text-center">
+                            <h3 class="font-display text-2xl font-bold text-brand-teal">50+</h3>
+                            <p class="text-sm text-gray-500">Publications</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2 relative">
+                    <div class="rounded-2xl overflow-hidden shadow-2xl transform rotate-1 hover:rotate-0 transition-transform duration-500">
+                        <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=452,fit=crop/AR0LQ30r96fePnJg/img_5872-Yyv9a0lpnyc7WqRO.jpeg" alt="Journey Image" class="w-full h-auto object-cover">
+                    </div>
+                    <!-- Decorative Element -->
+                    <div class="absolute -bottom-6 -left-6 w-24 h-24 bg-brand-teal/10 rounded-full -z-10"></div>
+                    <div class="absolute -top-6 -right-6 w-32 h-32 bg-brand-dark/5 rounded-full -z-10"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dan's Research & Publications Section -->
+    <section id="research" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-brand-teal font-bold tracking-wider uppercase text-sm mb-2 block">Our Work</span>
+                <h2 class="font-display text-4xl font-bold text-gray-900 mb-4">Research & Publications</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">From the forests of Kentucky to the rainforests of Belize, explore our contributions to wildlife biology and literature.</p>
+            </div>
+
+            <!-- Dan's Focus -->
+            <div class="mb-16 bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                    <div class="p-8 md:p-12 flex flex-col justify-center">
+                        <h3 class="font-serif text-2xl font-bold text-brand-dark mb-4">Dan's Focus: Terrestrial Organisms</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Dan is a wildlife biologist who has an interest in all terrestrial organisms. For the past 30 years, his focus has been the study of land snails. He has studied land snails in Kentucky, West Virginia, and in the Great Smoky Mountains National Park in the USA.
+                        </p>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            In Central America, his research has focused on Belize, Guatemala, a cursory survey in the Tamishyacu-Tahuayo Reserve in Peru, and currently, Panama with STRI.
+                        </p>
+                        <a href="https://www.researchgate.net/profile/Daniel-Dourson" target="_blank" rel="nofollow" class="inline-flex items-center text-brand-teal font-semibold hover:text-brand-dark transition-colors">
+                            View ResearchGate Profile <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                    <div class="relative h-64 md:h-auto">
+                        <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=550,fit=crop/AR0LQ30r96fePnJg/img_7113-AGB21zxw2PHLN0v5.jpeg" alt="Dan Dourson Research" class="absolute inset-0 w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Books Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Book 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 group">
+                    <div class="h-48 overflow-hidden bg-gray-200 relative">
+                        <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=550,fit=crop/AR0LQ30r96fePnJg/img_7123-YNqBnbN78jU8erDk.png" alt="Book Cover" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-serif text-xl font-bold text-gray-900 mb-2">Living Where the Cats Eat the Dogs</h4>
+                        <p class="text-sm text-gray-500 mb-4">By Dan Dourson</p>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">
+                            What began as a book of short stories about my 7-year adventure in the small country of Belize morphed into something much more profound! The journey sent me careening down a difficult road of self-discovery...
+                        </p>
+                        <a href="https://www.amazon.com/Books-Dan-Dourson/s?rh=n%3A283155%2Cp_27%3ADan%2BDourson" target="_blank" class="text-brand-teal text-sm font-semibold hover:underline">Get on Amazon &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Book 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 group">
+                    <div class="h-48 overflow-hidden bg-gray-200 relative">
+                        <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=457,fit=crop/mP4OG6Gg8DcRyZLG/img_5875-A3Q2xyEn26s98MOE.jpeg" alt="Land Snails Book" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-serif text-xl font-bold text-gray-900 mb-2">Land Snails of Belize</h4>
+                        <p class="text-sm text-gray-500 mb-4">By Dan & Judy Dourson</p>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">
+                            Prior to our research that began in 2006, only 24 species of land snails were reported from Belize. Our ten-year study documented a total of 158 native land snails...
+                        </p>
+                        <a href="https://www.amazon.com/Books-Dan-Dourson/s?rh=n%3A283155%2Cp_27%3ADan%2BDourson" target="_blank" class="text-brand-teal text-sm font-semibold hover:underline">Get on Amazon &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Book 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 group">
+                    <div class="h-48 overflow-hidden bg-gray-200 relative">
+                        <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=457,fit=crop/mP4OG6Gg8DcRyZLG/img_5864-YNqBnzDn8GcaW0Wl.jpeg" alt="Wildflowers Book" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-serif text-xl font-bold text-gray-900 mb-2">Wildflowers and Ferns of Red River Gorge</h4>
+                        <p class="text-sm text-gray-500 mb-4">By Dan & Judy Dourson</p>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">
+                            While books about hiking, climbing, and other recreational activities in the area are readily available, this is the first book specifically devoted to the biodiversity of the Gorge and its watershed.
+                        </p>
+                        <a href="https://www.amazon.com/Books-Dan-Dourson/s?rh=n%3A283155%2Cp_27%3ADan%2BDourson" target="_blank" class="text-brand-teal text-sm font-semibold hover:underline">Get on Amazon &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-brand-dark text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-lobster text-4xl font-bold text-white mb-4">Our Gallery</h2>
+                <p class="text-gray-300 max-w-2xl mx-auto">Capturing moments in nature and the field.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-[200px]">
+                <!-- Large Item -->
+                <div class="md:col-span-2 md:row-span-2 rounded-xl overflow-hidden relative group">
+                    <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1024,h=545,fit=crop/AR0LQ30r96fePnJg/img_7126-A85eg9M8aeTPqBMr.webp" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Gallery 1">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+                </div>
+                
+                <!-- Standard Item -->
+                <div class="rounded-xl overflow-hidden relative group">
+                    <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=830,fit=crop/AR0LQ30r96fePnJg/img_5893-YrDWkgOOegHOkP0w.jpeg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Gallery 2">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+                </div>
+                
+                <!-- Standard Item -->
+                <div class="rounded-xl overflow-hidden relative group">
+                    <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=830,fit=crop/AR0LQ30r96fePnJg/img_5904-AR0LQN442yi3Bxqz.jpeg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Gallery 3">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+                </div>
+
+                <!-- Wide Item -->
+                <div class="md:col-span-2 rounded-xl overflow-hidden relative group">
+                    <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1024,h=545,fit=crop/AR0LQ30r96fePnJg/img_5908-Yan1GxDDlkCqznBm.jpeg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Gallery 4">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 bg-white rounded-2xl shadow-xl overflow-hidden">
+                <!-- Info Side -->
+                <div class="bg-brand-dark p-12 text-white flex flex-col justify-between">
+                    <div>
+                        <h2 class="font-display text-3xl font-bold mb-6">Get In Touch</h2>
+                        <p class="text-gray-300 mb-8">Interested in our research, speaking engagements, or collaboration? Reach out to us below.</p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="bg-white/10 p-3 rounded-full">
+                                    <i data-feather="map-pin" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg">Location</h4>
+                                    <p class="text-gray-300">Kentucky, USA</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="bg-white/10 p-3 rounded-full">
+                                    <i data-feather="mail" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg">Email</h4>
+                                    <p class="text-gray-300">contact@danjudybiologists.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-12">
+                        <h4 class="font-bold text-lg mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-teal transition-colors"><i data-feather="facebook" class="w-5 h-5"></i></a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-teal transition-colors"><i data-feather="instagram" class="w-5 h-5"></i></a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-teal transition-colors"><i data-feather="twitter" class="w-5 h-5"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Form Side -->
+                <div class="p-12">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-brand-teal focus:ring-2 focus:ring-brand-teal/50 outline-none transition-all" placeholder="Your Name">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-brand-teal focus:ring-2 focus:ring-brand-teal/50 outline-none transition-all" placeholder="you@example.com">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-brand-teal focus:ring-2 focus:ring-brand-teal/50 outline-none transition-all" placeholder="How can we help you?"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-brand-teal text-white font-bold py-3 rounded-lg hover:bg-brand-dark transition-colors shadow-lg">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <span class="font-display font-bold text-xl">Dan & Judy Dourson</span>
+                </div>
+                <div class="text-gray-400 text-sm">
+                    &copy; 2025. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+<script src="https://huggingface.co/deepsite/deepsite-badge.js"></script>
+</body>
+</html>
