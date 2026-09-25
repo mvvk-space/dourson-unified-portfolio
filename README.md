@@ -1,13 +1,7 @@
----
-title: Dan & Judy Dourson Unified Portfolio
-colorFrom: gray
-colorTo: gray
-emoji: 🐳
-sdk: static
-pinned: false
-tags:
-  - deepsite-v3
----
+# Dan & Judy Dourson — Authors & Wildlife Biologists
 
-# Welcome to your new DeepSite project!
-This project was created with [DeepSite](https://huggingface.co/deepsite).
+A single-page portfolio for authors and wildlife biologists Dan & Judy Dourson: their journey, research & publications, a photo gallery, and contact info. Static HTML/CSS with 21 photographs.
+
+**Live:** https://mvvk-space.github.io/dourson-unified-portfolio/
+
+![Dan & Judy Dourson portfolio](screenshot.png)
